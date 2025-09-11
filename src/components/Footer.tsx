@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from 'react'
 
 const Footer: React.FC = () => {
@@ -10,8 +11,8 @@ const Footer: React.FC = () => {
         </div>
 
         <nav className="mh-footer-links" aria-label="Footer">
-          <a href="#about">About</a>
-          <a href="#resources">Resources</a>
+         <Link to="/about" className="mh-link">About Us</Link>
+         <Link to="/resources" className="mh-link">Resources</Link>
           <a href="#contact">Contact</a>
           <a href="#privacy">Privacy</a>
         </nav>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from 'react'
 import Footer from './Footer'
 import logo from '../assets/icon-removebg-preview.png'
@@ -20,9 +21,9 @@ const Homepage: React.FC = () => {
           <span className="mh-title">Mindfull Haven</span>
         </a>
         <nav className="mh-nav">
-          <a href="#about" className="mh-link">About Us</a>
-          <a href="#diary" className="mh-link">Diary Writing</a>
-          <a href="#resources" className="mh-link">Resources</a>
+          <Link to="/about" className="mh-link">About Us</Link>
+          <Link to="/diary" className="mh-link">Diary Writing</Link>
+          <Link to="/resources" className="mh-link">Resources</Link>
           <a href="#contact" className="mh-link">Contact Us</a>
           <a href="#login" className="mh-btn">Login</a>
         </nav>
@@ -40,8 +41,10 @@ const Homepage: React.FC = () => {
             reflect through guided journaling, and explore curated mental health resources.
           </p>
           <div className="mh-cta-row">
-            <a href="#contact" className="mh-cta-primary">Get in Touch<span className="mh-arrow">→</span></a>
-            <a href="#resources" className="mh-cta-secondary">Our Solutions</a>
+             <Link to="/chat" className="mh-cta-primary">
+    Get in Touch <span className="mh-arrow">→</span>
+  </Link>
+            <Link to="/resources" className="mh-cta-secondary">Our Solutions</Link>
           </div>
         </div>
 
@@ -169,27 +172,27 @@ const Homepage: React.FC = () => {
       <section className="mh-quick">
         <h3 className="mh-quick-title">What would you like to do next?</h3>
         <div className="mh-quick-grid">
-          <a href="#contact" className="mh-quick-card">
+          <Link to="/chat" className="mh-quick-card">
             <span className="mh-quick-emoji" aria-hidden="true">💬</span>
             <div>
               <div className="mh-quick-head">Start a chat</div>
               <div className="mh-quick-sub">Share what’s on your mind—no judgement</div>
             </div>
-          </a>
-          <a href="#diary" className="mh-quick-card">
+          </Link>
+          <Link to="/diary" className="mh-quick-card">
             <span className="mh-quick-emoji" aria-hidden="true">📝</span>
             <div>
               <div className="mh-quick-head">Write in your diary</div>
               <div className="mh-quick-sub">Guided prompts to reflect and unwind</div>
             </div>
-          </a>
-          <a href="#resources" className="mh-quick-card">
+          </Link>
+          <Link to="/resources" className="mh-quick-card">
             <span className="mh-quick-emoji" aria-hidden="true">📚</span>
             <div>
               <div className="mh-quick-head">Explore resources</div>
               <div className="mh-quick-sub">Exercises, articles, and coping strategies</div>
             </div>
-          </a>
+          </Link>
         </div>
       </section>
 

@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f4f8;
+}
+
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.message-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.message-user {
+  justify-content: flex-end;
+}
+
+.message-bot {
+  justify-content: flex-start;
+}
+
+.message {
+  padding: 12px 20px;
+  border-radius: 25px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #f0f0f0; /* Light gray background for user messages */
+  color: #000;
+  border-radius: 20px;
+}
+
+.bot {
+  background-color: transparent;
+  color: #333;
+}
+
+.bot-icon {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.chat-input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.chat-input-container button {
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.chat-input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Copied from App.css to keep navbar styles consistent */
+.mh-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mh-brand {
+  display: flex;
+  align-items: center;
+}
+
+.mh-logo {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.mh-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.mh-nav {
+  display: flex;
+  align-items: center;
+}
+
+.mh-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mh-link:hover {
+  color: #007bff;
+}
+
+.mh-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.mh-btn:hover {
+  background-color: #0056b3;
+}

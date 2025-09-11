@@ -1,0 +1,46 @@
+.resources-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d7ebfe, #dff5f7, #e4effe);
+}
+
+.resources-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 3rem;
+}
+
+.resource-card {
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.resource-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.resource-card p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.resource-card a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.resource-card a:hover {
+  text-decoration: underline;
+}
